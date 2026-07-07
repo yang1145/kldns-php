@@ -87,9 +87,11 @@ free-dns/
 │   └── vendor/             # Composer 依赖
 ├── config/                 # 安装后生成的数据库配置文件
 ├── docs/                   # 项目文档
-│   └── API.md              # API 接口文档
+│   ├── API.md              # API 接口文档
+│   └── Migration.md        # 数据库迁移与升级指南
 ├── index.php               # 统一入口文件
 ├── .htaccess               # Apache 重写规则
+├── web.config              # IIS URL Rewrite 配置
 └── README.md               # 项目说明
 ```
 
@@ -149,6 +151,10 @@ location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
 ```
+
+### IIS
+
+确保已安装 [URL Rewrite Module 2.1](https://www.iis.net/downloads/microsoft/url-rewrite)，并将项目根目录的 `web.config` 保留在站点根目录。该配置会自动将所有非文件、非目录请求转发到 `index.php`。
 
 ---
 
