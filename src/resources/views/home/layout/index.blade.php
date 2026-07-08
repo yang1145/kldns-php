@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-logo-name" href="/"><i class="fa fa-cloud"></i>{{ config('sys.web.name') }}</a>
+                <a class="nav-link nav-logo-name nav-logo-name-home" href="/">{{ config('sys.web.name') }}</a>
             </li>
         </ul>
     </div>
