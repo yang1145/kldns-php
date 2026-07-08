@@ -46,14 +46,10 @@
             </li>
         </ul>
     @else
-        <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
-            <li class="nav-item">
-                <a class="nav-link p-2" href="/login">登录</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link p-2" href="/login?act=reg">注册</a>
-            </li>
-        </ul>
+        <div class="nav-pill-group ml-md-auto">
+            <a class="nav-pill" href="/login">登录</a>
+            <a class="nav-pill" href="/login?act=reg">注册</a>
+        </div>
     @endif
 </header>
 <main class="bd-masthead" id="content">
@@ -68,13 +64,13 @@
                     <div class="input-group">
                         <input type="text" class="form-control" style="height: 3rem" name="name"
                                placeholder="输入你想要的二级域名前缀">
-                        <select name="did" class="form-control" style="flex: none;width: 100px;height: 3rem">
+                        <select name="did" class="form-control" style="flex: none;width: 180px;height: 3rem">
                             @foreach(\App\Helper::getAvailableDomains() as $domain)
                                 <option value="{{ $domain->did }}">.{{ $domain->domain }}</option>
                             @endforeach
                         </select>
                         <div class="input-group-append">
-                        <span class="input-group-text" style="background: #563d7c;color: white;"
+                        <span class="input-group-text" style="background: #007bff;color: white;"
                               onclick="check()">查询</span>
                         </div>
                     </div>

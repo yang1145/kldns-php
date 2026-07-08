@@ -187,10 +187,41 @@
     font-size: 12px;
 }
 
-.bd-navbar-index {
+.bd-navbar.bd-navbar-index {
     min-height: 4rem;
-    background-color: #563d7c;
+    background: #007bff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
     height: auto;
     position: relative;
+}
+
+/* 登录/注册胶囊按钮组 */
+.nav-pill-group {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 50rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-pill {
+    display: inline-block;
+    padding: 0.45rem 1.4rem;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-pill + .nav-pill {
+    border-left: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.nav-pill:hover {
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
 }
