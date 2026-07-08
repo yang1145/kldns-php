@@ -2,6 +2,18 @@
 
 一个基于 **Laravel 5.8** 开发的多用户、多域名、多平台二级域名分发系统。支持对接多家主流 DNS 解析服务商，提供 Web 端用户中心与后台管理，可用于学习、测试或内部二级域名自助分发场景。
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/web_server-IIS-0078D4?logo=iis" alt="IIS">
+  <img src="https://img.shields.io/badge/web_server-Apache-D22128?logo=apache" alt="Apache">
+  <img src="https://img.shields.io/badge/web_server-Nginx-009639?logo=nginx" alt="Nginx">
+  <img src="https://img.shields.io/badge/web_server-Caddy-22B638?logo=caddy" alt="Caddy">
+  <img src="https://img.shields.io/badge/web_server-LiteSpeed-00AEEF" alt="LiteSpeed">
+  <img src="https://img.shields.io/badge/support-all_web_servers-green" alt="All Web Servers">
+  <img src="https://img.shields.io/badge/php-7.1--7.3-777BB4?logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/mysql-5.6+-4479A1?logo=mysql" alt="MySQL">
+</p>
+
 ---
 
 ## 目录
@@ -50,7 +62,7 @@
 
 ## 环境要求
 
-- PHP >= 7.1.3
+- PHP 7.1 - 7.3（推荐）
 - PHP OpenSSL 扩展
 - PHP PDO 扩展
 - PHP Mbstring 扩展
